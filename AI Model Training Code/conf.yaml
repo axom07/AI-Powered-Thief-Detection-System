@@ -1,4 +1,4 @@
-path: C:/Users/User/Desktop/Thief Detection YOLOv11
+path: C:/Users/yourUSER/Desktop/Thief Detection YOLOv11
 train: train/images
 val: valid/images
 
