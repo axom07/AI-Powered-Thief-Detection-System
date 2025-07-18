@@ -1,0 +1,27 @@
+#yolo task=detect mode=predict model=yolov8n.pt source=0
+
+// Main commands to run detection code manually
+#source ~/yolov5_env/bin/activate
+
+cd ~/Desktop <- Needed as files stored here
+
+xhost +SI:localuser:root <- This first
+
+sudo ~/yolov5_env/bin/python detect_webcam.py <- Then this
+sudo ~/yolov5_env/bin/python detect_thief.py <- OR this
+sudo ~/yolov5_env/bin/python thief_code.py <- OR this
+
+
+// VISUAL STUDIO CODE COMMAND FOR OPENING FILES FROM RASBERRY PI:
+
+>remote-ssh -> Then press Connect Host and it should connect
+
+
+// Main Commands to stop and run the entire detection code as a service.
+sudo systemctl daemon-reload
+sudo systemctl enable thiefsystem.service
+sudo systemctl status thiefsystem.service
+sudo systemctl stop thiefsystem.service
+
+
+dos2unix /home/raspi/Desktop/start_thief.sh <- Converting from Windows Text to Unix Format

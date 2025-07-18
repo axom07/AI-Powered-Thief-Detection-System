@@ -1,0 +1,6 @@
+path: C:/Users/User/Desktop/Thief Detection YOLOv11
+train: train/images
+val: valid/images
+
+nc: 5
+names: ['baseball-bat', 'crowbar', 'gun', 'knife', 'person']
